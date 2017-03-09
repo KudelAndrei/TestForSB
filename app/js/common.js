@@ -1,5 +1,12 @@
 $(document).ready(function(){
 
+	/* мобильное меню */
+	$(".menu-toggle").click(function(){
+		$(this).toggleClass('open');
+		$(".menu").slideToggle();
+		return false;
+	});
+
 	/* поиск */
 	$('.search i').click(function(){
 		if ($('#search__input').hasClass('open')){

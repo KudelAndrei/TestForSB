@@ -5,7 +5,8 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+	.menu
+		display: none
 
 
 /* Medium Devices, Desktops */
@@ -15,12 +16,32 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+	.logo
+		.logo__text
+			margin-top: 6px
+			font-size: 36px
+		.logo__before
+			top: -16px
+			right: -14px
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	.header--top 
+		.logo
+			margin-top: 0
+			.logo__img
+				margin-right: 10px
+			.logo__text
+				margin-top: 0
+				font-size: 30px
+				line-height: 28px
+				display: inline-block
+			.logo__prof
+				font-size: 16px
+				text-transform: uppercase
+				bottom: -22px
+				left: 1px
 
 
 /* Custom, iPhone Retina */
@@ -52,5 +73,5 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
-	/**/
+	display: block!important
 
