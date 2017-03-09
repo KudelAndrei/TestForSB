@@ -24,28 +24,147 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
+	<link rel="stylesheet" href="css/main.min.css">
+
 </head>
 
 <body>
 
-	<div class="container">
+	<header class="header">
+		
+		<!-- панель логотипа и кабинета -->
+		<div class="header--top">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-7">
+						<a href="#" class="logo"><img src="img/logo.png" alt="G-DERM Professional"><span class="logo__text">G-DEARM</span> <span class="logo__prof">professional</span> <span class="logo__before"><i class="fa fa-registered" aria-hidden="true"></i> Ремодулятор матрикса кожи</span></a>
+					</div>
 
-		<div class="row">
+					<div class="col-md-5">
+						<div class="header-right">
+							<a href="#" class="link--room"><i class="fa fa-user"></i><i class="fa fa-user-circle" aria-hidden="true"></i>Кабинет косметолога</a>
+							<a href="mailto: 7(812)3130090" class="link--phone">+7 (812) 313-00-90</a>
+							<a href="#" class="link--read">Написать нам</a>
+						</div>
+					</div>
 
-			<div class="col-sm-8 col-sm-offset-2">
-				
-				<img class="img-responsive" src="img/preview.jpg" alt="Start HTML5 Template">
-				<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Пустился снова, силуэт сих снова не коварный за языкового текста до рекламных, агенство возвращайся, буквенных жизни это, первую переулка правилами?</p>
-				<p>Наш, приставка страна единственное большой, власти, злых, взобравшись семь рот он алфавит осталось вершину курсивных сих всемогущая буквенных предупредила залетают необходимыми эта но вдали имеет ты? Предупреждал повстречался, но которое!</p>
-				<p>Злых, знаках свою. Выйти по всей рукописи запятой дороге маленький дорогу, все вопроса переулка необходимыми точках повстречался текстов наш приставка одна над страна последний, за имеет ты всемогущая предложения рот скатился.</p>
-
+				</div>
 			</div>
-			
 		</div>
 
-	</div>
+		<!-- Панель меню и поиска -->
+		<div class="header--bottom">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-10">
+						<ul class="menu clearfix">
+							<li><a href="#" class="menu__item">О марке</a></li>
+							<li><a href="#" class="menu__item">Академия</a></li>
+							<li class="menu__item--sub menu__item clearfix" >Наша продукция
+									<ul class="menu-sub">
+										<li class="menu-sub__item"><a href="#" >Профессиональная серия</a></li>
+										<li class="menu-sub__item"><a href="#">Домашняя серия</a></li>
+									</ul>
+							</li>
+							<li><a href="#" class="menu__item">Акции</a></li>
+							<li><a href="#" class="menu__item">Где купить</a></li>
+							<li><a href="#" class="menu__item">Сотрудничество</a></li>
+							<li><a href="#" class="menu__item">Контакты</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-2"><div class="search"><input id="search__input" type="text" placeholder="Поиск..."><i class="fa fa-search" aria-hidden="true" class="search__btn"></i></div></div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- слайдер -->
+		<div class="owl-header owl-carousel">	
 	
-	<link rel="stylesheet" href="css/main.min.css">
+			<div class="owl-header__item" style="background-image: url(img/slide1.png);">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5">
+							
+							<div class="owl-header__content">
+								<h1 class="owl-header__head">Философия G-DERM</h1>
+								<h3 class="owl-header__desc">Замедляя внутренние источники старения, мы помогаем женщинам выглядеть, чувствовать и жить молодо</h3>
+								<a href="#" class="link__btn">Подробнее</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="owl-header__item" style="background-image: url(img/slide1.png);">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5">
+							
+							<div class="owl-header__content">
+								<h1 class="owl-header__head">Философия G-DERM 2</h1>
+								<h3 class="owl-header__desc">Замедляя внутренние источники старения, мы помогаем женщинам выглядеть, чувствовать и жить молодо</h3>
+								<a href="#" class="link__btn">Подробнее</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="owl-header__item" style="background-image: url(img/slide1.png);">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5">
+							
+							<div class="owl-header__content">
+								<h1 class="owl-header__head">Философия G-DERM 3</h1>
+								<h3 class="owl-header__desc">Замедляя внутренние источники старения, мы помогаем женщинам выглядеть, чувствовать и жить молодо</h3>
+								<a href="#" class="link__btn">Подробнее</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>	
+	
+
+	</header>
+
+
+	<!-- секция каталогов -->
+	<section class="catalog">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-6">
+					<div class="catalog-item">
+						<h3 class="catalog-item__head">Профессиональная серия</h3>
+						<p class="catalog-item__desc">Только для использования профессиональными косметологами после получения сертификата в нашем учебном-центре.</p>
+						<a href="#" class="catalog-item__link">Перейти в каталог</a>
+						<div class="catalog-item__img"><img src="img/1.png" alt="Профессиональная серия"></div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="catalog-item">
+						<h3 class="catalog-item__head">Домашняя серия</h3>
+						<p class="catalog-item__desc">Те же препараты, но в меншей концентрации. Для использования дома в перерывах между салонными процедурами.</p>
+						<a href="#" class="catalog-item__link">Перейти в каталог</a>
+						<div class="catalog-item__img"><img src="img/2.png" alt="Профессиональная серия"></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	
 	<script src="js/scripts.min.js"></script>
 
 </body>

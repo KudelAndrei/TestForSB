@@ -34,12 +34,268 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.75
-	font-family: $default-font
 	overflow-x: hidden
+	font-family: "roboto", sans-serif
+	color: $dark-color
+	font-weight: 300
 
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
+
+ul, li
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+a
+	color: $dark-color
+	font-weight: 300
+	outline: none
+	&:hover
+		text-decoration: none
+	&:focus
+		text-decoration: none
+
+
+
+.header--top
+	padding: 15px 0 20px
+	border-bottom: 1px solid #e6e6e6
+
+	.logo
+		display: inline-block
+		position: relative
+		color: $dark-color
+		margin-top: 15px
+		&:hover, &:focus
+			text-decoration: none
+			outline: none
+		img
+			display: inline-block
+			margin-right: 20px
+		&__text
+			font-size: 40px
+			margin: 0
+			line-height: 40px
+			font-weight: 700
+			display: inline-block
+		&__prof
+			position: absolute
+			display: block
+			font-weight: 300
+			font-size: 14px
+			text-transform: uppercase
+			bottom: -5px
+			left: 114px	
+		&__before
+			position: absolute
+			top: -8px
+			font-size: 14px
+			right: -210px
+
+
+	.header-right
+		a
+			display: block
+			text-align: right
+			font-weight: 300
+			font-size: 14px
+
+		.link--room
+			margin-bottom: 10px
+			i 
+				margin-right: 6px
+
+		.link--phone
+			font-weight: 600
+
+		.link--read
+			float: right
+			line-height: 20px
+			display: inline-block
+			border-bottom: 1px dotted $dark-color
+			&:hover
+				border-bottom: 1px solid transparent
+
+
+.header--bottom
+	.search
+		text-align: right
+		padding-top: 7px
+		>input
+			width: 0
+			height: 30px
+			border: none
+			background-color: #F3F3F3
+			transition: width 0.3s ease-in-out
+			&.open
+				width: calc(100% - 25px)
+				padding-left: 10px
+				padding-right: 5px
+
+		i
+			text-align: right
+			padding: 10px 5px
+			cursor: pointer
+			z-index: 2
+
+.menu
+	li 
+		float: left
+		position: relative
+		cursor: pointer
+		&:hover
+			&::before
+				display: none
+		&::before
+			position: absolute
+			content: ""
+			right: 0
+			top: 15px
+			width: 1px
+			height: 22px
+			background-color: #e6e6e6
+		&:first-child
+			.menu__item
+				padding-left: 5px
+		&:last-child
+			&::before
+				display: none
+			.menu__item
+				padding-right: 5px
+
+	.menu__item
+		padding: 15px 20px
+		display: inline-block
+		text-transform: uppercase
+		line-height: 20px
+		transition: color, background-color, 0.2s ease
+		&:hover
+			background-color: $accent-color
+			color: #fff
+		&--sub:hover
+			.menu-sub
+				.menu-sub__item
+					display: block
+
+	.menu-sub
+		position: absolute
+		top: calc(100% - 2px)
+		width: 100%
+		left: 0
+		border-top: 1px solid transparent
+		li
+			width: 100%
+			&:first-child
+				border-top: 2px solid $accent-color
+		&__item
+			z-index: 2
+			display: none
+			cursor: pointer
+			padding: 10px 20px
+			font-size: 14px
+			text-transform: none
+			background-color: #fff
+			&::before
+				display: none
+			&:hover
+				background-color: #f5f5f5
+				display: block
+
+
+.owl-header
+	.owl-header__item
+		min-height: 500px
+	.owl-header__content
+		margin-top: 150px
+		margin-left: 20px
+	.owl-header__head
+		font-size: 40px
+		line-height: 44px
+		margin-bottom: 10px
+		display: inline-block
+	.owl-header__desc
+		font-weight: 300
+		line-height: 24px
+		margin-bottom: 25px
+		display: inline-block
+
+	.owl-dots
+		position: absolute
+		bottom: 30px
+		left: 50%
+		transform: translateX(-50%)
+		.owl-dot
+			width: 10px
+			height: 10px
+			background-color: rgba($accent-color, .4)
+			border-radius: 50%
+			display: inline-block
+			margin-right: 10px
+			&.active
+				background-color: $accent-color
+
+
+.link__btn
+	display: inline-block
+	background-color: $dark-color
+	color: #fff
+	padding: 10px 30px
+	border-radius: 2px
+	&:hover
+		background-color: darken($dark-color, 10%)
+		color: #fff
+
+
+
+
+.catalog
+	padding: 60px 0
+	.catalog-item
+		border: 1px solid #e6e6e6
+		padding: 30px
+		position: relative
+		&__head
+			display: inline-block
+			position: absolute
+			background-color: #fff
+			padding: 5px
+			top: -25px
+			margin: 0
+			font-size: 22px
+			
+		&__desc
+			margin-top: 0
+			display: block
+			max-width: 70%
+			font-weight: 300
+			line-height: 20px
+
+		&__link
+			font-weight: 300
+			position: relative
+
+			&::before
+				position: absolute
+				content: ''
+				top: 9px
+				right: -21px
+				border: 3px solid transparent
+				border-left: 6px solid $dark-color
+
+		&__img
+			position: absolute
+			right: 25px
+			bottom: 0
+			max-width: 85px
+			img
+				max-width: 100%
+
+
+
+
+
 
 @import "media" // Всегда в конце
